@@ -134,7 +134,7 @@ export default function Base64Tool() {
         <div className="flex gap-2">
           <button
             onClick={() => setMode('encode')}
-            className={`px-4 py-2 rounded ${mode === 'encode' 
+            className={`px-4 py-2 cursor-pointer rounded ${mode === 'encode' 
               ? 'bg-indigo-600 text-white' 
               : 'bg-gray-100'}`}
           >
@@ -142,7 +142,7 @@ export default function Base64Tool() {
           </button>
           <button
             onClick={() => setMode('decode')}
-            className={`px-4 py-2 rounded ${mode === 'decode' 
+            className={`px-4 py-2 cursor-pointer rounded ${mode === 'decode' 
               ? 'bg-indigo-600 text-white' 
               : 'bg-gray-100'}`}
           >
@@ -206,14 +206,14 @@ export default function Base64Tool() {
           <div className="flex gap-2">
             <button
               onClick={copyToClipboard}
-              className="bg-gray-200 px-3 py-1.5 rounded text-sm hover:bg-gray-300"
+              className="bg-gray-200 px-3 py-1.5 cursor-pointer rounded text-sm hover:bg-gray-300"
               aria-label="Copy result to clipboard"
             >
               Copy
             </button>
             <button
               onClick={downloadResult}
-              className="bg-gray-200 px-3 py-1.5 rounded text-sm hover:bg-gray-300"
+              className="bg-gray-200 px-3 py-1.5 cursor-pointer rounded text-sm hover:bg-gray-300"
               aria-label="Download result"
             >
               Download

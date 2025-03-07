@@ -128,7 +128,7 @@ export default function UrlEncoderDecoder() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6">
         <button
           onClick={() => setOptions(p => ({...p, autoEncode: !p.autoEncode, autoDecode: false}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.autoEncode
               ? 'bg-indigo-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'
@@ -138,7 +138,7 @@ export default function UrlEncoderDecoder() {
         </button>
         <button
           onClick={() => setOptions(p => ({...p, autoDecode: !p.autoDecode, autoEncode: false}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.autoDecode
               ? 'bg-blue-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'
@@ -148,7 +148,7 @@ export default function UrlEncoderDecoder() {
         </button>
         <button
           onClick={() => setOptions(p => ({...p, preserveSpaces: !p.preserveSpaces}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.preserveSpaces
               ? 'bg-green-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'
@@ -158,7 +158,7 @@ export default function UrlEncoderDecoder() {
         </button>
         <button
           onClick={resetFields}
-          className="p-2 rounded bg-red-100 hover:bg-red-200 text-red-600"
+          className="p-2 cursor-pointer rounded bg-red-100 hover:bg-red-200 text-red-600"
         >
           Reset
         </button>
@@ -168,13 +168,13 @@ export default function UrlEncoderDecoder() {
         <div className="flex gap-2">
           <button
             onClick={urlEncode}
-            className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"
+            className="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-indigo-700"
           >
             Encode
           </button>
           <button
             onClick={urlDecode}
-            className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700"
+            className="bg-gray-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-gray-700"
           >
             Decode
           </button>
@@ -205,7 +205,7 @@ export default function UrlEncoderDecoder() {
             <label className="text-gray-700">Result:</label>
             <button
               onClick={copyToClipboard}
-              className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+              className="bg-gray-200 cursor-pointer px-4 py-2 rounded hover:bg-gray-300"
             >
               Copy
             </button>

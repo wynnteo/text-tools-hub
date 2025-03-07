@@ -161,25 +161,25 @@ export default function QrGenerator() {
               <div className="flex gap-2">
                 <button
                   onClick={() => downloadQR('png')}
-                  className="cursor-pointer bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 flex items-center gap-2"
+                  className="cursor-pointer cursor-pointer bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 flex items-center gap-2"
                 >
                   <FiDownload /> PNG
                 </button>
                 <button
                   onClick={() => downloadQR('jpeg')}
-                  className="cursor-pointer bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 flex items-center gap-2"
+                  className="cursor-pointer cursor-pointer bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 flex items-center gap-2"
                 >
                   <FiDownload /> JPEG
                 </button>
                 <button
                   onClick={() => downloadQR('svg')}
-                  className="cursor-pointer bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 flex items-center gap-2"
+                  className="cursor-pointer cursor-pointer bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 flex items-center gap-2"
                 >
                   <FiDownload /> SVG
                 </button>
                 <button
                   onClick={copyToClipboard}
-                  className="cursor-pointer bg-gray-200 px-4 py-2 rounded hover:bg-gray-300 flex items-center gap-2"
+                  className="cursor-pointer cursor-pointer bg-gray-200 px-4 py-2 rounded hover:bg-gray-300 flex items-center gap-2"
                 >
                   {copied ? <FiCheckCircle className="text-green-600" /> : <FiCopy />}
                   {copied ? 'Copied!' : 'Copy'}

@@ -179,19 +179,19 @@ export default function JsonFormatter() {
           <div className="absolute right-2 top-2 flex gap-2">
             <button
               onClick={() => setViewMode('json')}
-              className={`px-2 py-1 rounded ${viewMode === 'json' ? 'bg-indigo-100' : 'bg-gray-100'}`}
+              className={`px-2 py-1 cursor-pointer rounded ${viewMode === 'json' ? 'bg-indigo-100' : 'bg-gray-100'}`}
             >
               JSON
             </button>
             <button
               onClick={() => setViewMode('yaml')}
-              className={`px-2 py-1 rounded ${viewMode === 'yaml' ? 'bg-indigo-100' : 'bg-gray-100'}`}
+              className={`px-2 py-1 cursor-pointer rounded ${viewMode === 'yaml' ? 'bg-indigo-100' : 'bg-gray-100'}`}
             >
               YAML
             </button>
             <button
               onClick={() => setViewMode('csv')}
-              className={`px-2 py-1 rounded ${viewMode === 'csv' ? 'bg-indigo-100' : 'bg-gray-100'}`}
+              className={`px-2 py-1 cursor-pointer rounded ${viewMode === 'csv' ? 'bg-indigo-100' : 'bg-gray-100'}`}
             >
               CSV
             </button>
@@ -216,13 +216,13 @@ export default function JsonFormatter() {
               <div className="absolute top-2 right-2 flex gap-2">
                 <button
                   onClick={copyToClipboard}
-                  className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"
+                  className="bg-blue-600 cursor-pointer text-white px-3 py-1 rounded hover:bg-blue-700"
                 >
                   {copied ? 'Copied!' : 'Copy'}
                 </button>
                 <button
                   onClick={downloadOutput}
-                  className="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300"
+                  className="bg-gray-200 cursor-pointer px-3 py-1 rounded hover:bg-gray-300"
                 >
                   Download
                 </button>
@@ -236,25 +236,25 @@ export default function JsonFormatter() {
       <div className="flex flex-wrap gap-2">
         <button
           onClick={convertToYaml}
-          className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700"
+          className="bg-gray-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-gray-700"
         >
           JSON → YAML
         </button>
         <button
           onClick={convertYamlToJson}
-          className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700"
+          className="bg-purple-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-purple-700"
         >
           YAML → JSON
         </button>
         <button
           onClick={convertToCsv}
-          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+          className="bg-green-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-green-700"
         >
           JSON → CSV
         </button>
         <button
           onClick={convertCsvToJson}
-          className="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700"
+          className="bg-yellow-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-yellow-700"
         >
           CSV → JSON
         </button>

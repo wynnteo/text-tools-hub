@@ -108,7 +108,7 @@ export default function WordCounter() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6">
         <button
           onClick={() => setOptions(p => ({...p, includePunctuation: !p.includePunctuation}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.includePunctuation
               ? 'bg-indigo-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'
@@ -118,7 +118,7 @@ export default function WordCounter() {
         </button>
         <button
           onClick={() => setOptions(p => ({...p, includeWhitespace: !p.includeWhitespace}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.includeWhitespace
               ? 'bg-blue-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'
@@ -128,7 +128,7 @@ export default function WordCounter() {
         </button>
         <button
           onClick={() => setOptions(p => ({...p, autoUpdate: !p.autoUpdate}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.autoUpdate
               ? 'bg-green-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'

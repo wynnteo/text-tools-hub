@@ -115,49 +115,49 @@ export default function CaseConverter() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6">
         <button
           onClick={() => setActiveCase('upper')}
-          className={`p-2 rounded ${activeCase === 'upper' ? 'bg-indigo-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+          className={`p-2 cursor-pointer rounded ${activeCase === 'upper' ? 'bg-indigo-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
         >
           UPPERCASE
         </button>
         <button
           onClick={() => setActiveCase('lower')}
-          className={`p-2 rounded ${activeCase === 'lower' ? 'bg-gray-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+          className={`p-2 cursor-pointer rounded ${activeCase === 'lower' ? 'bg-gray-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
         >
           lowercase
         </button>
         <button
           onClick={() => setActiveCase('title')}
-          className={`p-2 rounded ${activeCase === 'title' ? 'bg-green-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+          className={`p-2 cursor-pointer rounded ${activeCase === 'title' ? 'bg-green-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
         >
           Title Case
         </button>
         <button
           onClick={() => setActiveCase('sentence')}
-          className={`p-2 rounded ${activeCase === 'sentence' ? 'bg-blue-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+          className={`p-2 cursor-pointer rounded ${activeCase === 'sentence' ? 'bg-blue-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
         >
           Sentence
         </button>
         <button
           onClick={() => setActiveCase('camel')}
-          className={`p-2 rounded ${activeCase === 'camel' ? 'bg-purple-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+          className={`p-2 cursor-pointer rounded ${activeCase === 'camel' ? 'bg-purple-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
         >
           camelCase
         </button>
         <button
           onClick={() => setActiveCase('snake')}
-          className={`p-2 rounded ${activeCase === 'snake' ? 'bg-orange-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+          className={`p-2 cursor-pointer rounded ${activeCase === 'snake' ? 'bg-orange-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
         >
           snake_case
         </button>
         <button
           onClick={() => setActiveCase('kebab')}
-          className={`p-2 rounded ${activeCase === 'kebab' ? 'bg-pink-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+          className={`p-2 cursor-pointer rounded ${activeCase === 'kebab' ? 'bg-pink-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
         >
           kebab-case
         </button>
         <button
           onClick={() => setActiveCase('alternating')}
-          className={`p-2 rounded ${activeCase === 'alternating' ? 'bg-teal-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+          className={`p-2 cursor-pointer rounded ${activeCase === 'alternating' ? 'bg-teal-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
         >
           AlTeRnAtInG
         </button>
@@ -166,13 +166,13 @@ export default function CaseConverter() {
       <div className="grid grid-cols-2 gap-2 mb-6">
         <button
           onClick={() => setOptions(p => ({...p, autoConvert: !p.autoConvert}))}
-          className={`p-2 rounded ${options.autoConvert ? 'bg-indigo-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+          className={`p-2 cursor-pointer rounded ${options.autoConvert ? 'bg-indigo-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
         >
           {options.autoConvert ? 'Auto Convert ✔' : 'Enable Auto-Convert'}
         </button>
         <button
           onClick={() => setOptions(p => ({...p, preserveSpacing: !p.preserveSpacing}))}
-          className={`p-2 rounded ${options.preserveSpacing ? 'bg-green-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+          className={`p-2 cursor-pointer rounded ${options.preserveSpacing ? 'bg-green-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
         >
           {options.preserveSpacing ? 'Preserve Spaces' : 'Trim Spaces'}
         </button>
@@ -190,13 +190,13 @@ export default function CaseConverter() {
             <div className="flex gap-2">
               <button
                 onClick={resetFields}
-                className="bg-red-100 px-4 py-2 rounded hover:bg-red-200 text-red-600"
+                className="bg-red-100 px-4 py-2 cursor-pointer rounded hover:bg-red-200 text-red-600"
               >
                 Reset
               </button>
               <button
                 onClick={copyToClipboard}
-                className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+                className="bg-gray-200 px-4 py-2 cursor-pointer rounded hover:bg-gray-300"
               >
                 Copy
               </button>
@@ -205,7 +205,7 @@ export default function CaseConverter() {
           <textarea
             value={output}
             readOnly
-            className="w-full p-3 border rounded-lg bg-gray-50 h-32"
+            className="w-full p-3 border cursor-pointer rounded-lg bg-gray-50 h-32"
           />
         </div>
       )}

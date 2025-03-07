@@ -110,7 +110,7 @@ export default function TextReverser() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6">
         <button
           onClick={() => setOptions(p => ({...p, preserveSpacing: !p.preserveSpacing}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.preserveSpacing
               ? 'bg-indigo-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'
@@ -120,7 +120,7 @@ export default function TextReverser() {
         </button>
         <button
           onClick={() => setOptions(p => ({...p, reverseWords: !p.reverseWords}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.reverseWords
               ? 'bg-blue-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'
@@ -130,7 +130,7 @@ export default function TextReverser() {
         </button>
         <button
           onClick={() => setOptions(p => ({...p, reverseLines: !p.reverseLines}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.reverseLines
               ? 'bg-green-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'
@@ -140,7 +140,7 @@ export default function TextReverser() {
         </button>
         <button
           onClick={resetFields}
-          className="p-2 rounded bg-red-100 hover:bg-red-200 text-red-600"
+          className="p-2 rounded bg-red-100 cursor-pointer hover:bg-red-200 text-red-600"
         >
           Reset
         </button>
@@ -148,7 +148,7 @@ export default function TextReverser() {
 
       <button
         onClick={reverseText}
-        className="w-full bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 mb-4"
+        className="w-full bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded-lg hover:bg-indigo-700 mb-4"
       >
         Reverse Text
       </button>
@@ -159,7 +159,7 @@ export default function TextReverser() {
             <label className="text-gray-700">Reversed Text:</label>
             <button
               onClick={copyToClipboard}
-              className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+              className="bg-gray-200 px-4 py-2 cursor-pointer rounded hover:bg-gray-300"
             >
               Copy
             </button>

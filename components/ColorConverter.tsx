@@ -227,7 +227,7 @@ export default function ColorConverter() {
               />
               <button
                 onClick={() => copyToClipboard(color)}
-                className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+                className="bg-gray-200 cursor-pointer px-4 py-2 rounded hover:bg-gray-300"
               >
                 <FiCopy />
               </button>
@@ -244,7 +244,7 @@ export default function ColorConverter() {
               />
               <button
                 onClick={() => copyToClipboard(hexToRgb(color))}
-                className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+                className="bg-gray-200 px-4 py-2 cursor-pointer rounded hover:bg-gray-300"
               >
                 <FiCopy />
               </button>
@@ -261,7 +261,7 @@ export default function ColorConverter() {
               />
               <button
                 onClick={() => copyToClipboard(hexToHsl(color))}
-                className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+                className="bg-gray-200 px-4 py-2 cursor-pointer rounded hover:bg-gray-300"
               >
                 <FiCopy />
               </button>
@@ -278,7 +278,7 @@ export default function ColorConverter() {
               />
               <button
                 onClick={() => copyToClipboard(hexToCmyk(color))}
-                className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+                className="bg-gray-200 px-4 py-2 cursor-pointer rounded hover:bg-gray-300"
               >
                 <FiCopy />
               </button>

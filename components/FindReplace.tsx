@@ -210,13 +210,13 @@ export default function FindReplace() {
       <div className="flex flex-wrap gap-4 mt-6">
         <button
           onClick={copyToClipboard}
-          className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"
+          className="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-indigo-700"
         >
           Copy Modified Text
         </button>
         <button
           onClick={downloadText}
-          className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+          className="bg-gray-200 px-4 py-2 cursor-pointer rounded hover:bg-gray-300"
         >
           Download
         </button>

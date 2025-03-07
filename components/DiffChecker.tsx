@@ -116,7 +116,7 @@ export default function DiffChecker() {
         
         <button
           onClick={swapTexts}
-          className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+          className="bg-gray-200 px-4 py-2 cursor-pointer rounded hover:bg-gray-300"
           title="Swap texts"
         >
           ↔️ Swap
@@ -185,7 +185,7 @@ export default function DiffChecker() {
             </h3>
             <button
               onClick={() => copyToClipboard(leftText + '\n' + rightText)}
-              className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+              className="bg-gray-200 px-4 py-2 cursor-pointer rounded hover:bg-gray-300"
             >
               Copy All
             </button>

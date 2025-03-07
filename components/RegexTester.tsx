@@ -144,7 +144,7 @@ export default function RegexTester() {
                 <button
                   key={flag}
                   onClick={() => setFlags(f => f.includes(flag) ? f.replace(flag, '') : f + flag)}
-                  className={`px-3 py-1 rounded ${flags.includes(flag) ? 'bg-indigo-600 text-white' : 'bg-gray-100'}`}
+                  className={`px-3 py-1 cursor-pointer rounded ${flags.includes(flag) ? 'bg-indigo-600 text-white' : 'bg-gray-100'}`}
                 >
                   {flag}
                 </button>
@@ -159,7 +159,7 @@ export default function RegexTester() {
                 <button
                   key={name}
                   onClick={() => setPattern(pattern)}
-                  className="bg-gray-100 p-2 rounded hover:bg-gray-200 text-sm"
+                  className="bg-gray-100 p-2 cursor-pointer rounded hover:bg-gray-200 text-sm"
                 >
                   {name}
                 </button>

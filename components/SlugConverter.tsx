@@ -102,7 +102,7 @@ export default function SlugConverter() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6">
         <button
           onClick={() => setOptions(p => ({...p, separator: '-'}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.separator === '-' 
               ? 'bg-indigo-600 text-white' 
               : 'bg-gray-100 hover:bg-gray-200'
@@ -112,7 +112,7 @@ export default function SlugConverter() {
         </button>
         <button
           onClick={() => setOptions(p => ({...p, separator: '_'}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.separator === '_' 
               ? 'bg-blue-600 text-white' 
               : 'bg-gray-100 hover:bg-gray-200'
@@ -122,7 +122,7 @@ export default function SlugConverter() {
         </button>
         <button
           onClick={() => setOptions(p => ({...p, preserveCase: !p.preserveCase}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.preserveCase 
               ? 'bg-green-600 text-white' 
               : 'bg-gray-100 hover:bg-gray-200'
@@ -132,7 +132,7 @@ export default function SlugConverter() {
         </button>
         <button
           onClick={() => setOptions(p => ({...p, trim: !p.trim}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.trim 
               ? 'bg-purple-600 text-white' 
               : 'bg-gray-100 hover:bg-gray-200'
@@ -149,13 +149,13 @@ export default function SlugConverter() {
             <div className="flex gap-2">
               <button
                 onClick={() => setInput(slug)}
-                className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+                className="bg-gray-200 cursor-pointer px-4 py-2 rounded hover:bg-gray-300"
               >
                 Edit Slug
               </button>
               <button
                 onClick={copyToClipboard}
-                className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"
+                className="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-indigo-700"
               >
                 Copy
               </button>

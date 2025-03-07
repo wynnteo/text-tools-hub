@@ -138,7 +138,7 @@ export default function HtmlEncoderDecoder() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6">
         <button
           onClick={() => setOptions(p => ({...p, encodeAll: !p.encodeAll}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.encodeAll
               ? 'bg-indigo-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'
@@ -148,7 +148,7 @@ export default function HtmlEncoderDecoder() {
         </button>
         <button
           onClick={() => setOptions(p => ({...p, minify: !p.minify, beautify: false}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.minify
               ? 'bg-blue-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'
@@ -158,7 +158,7 @@ export default function HtmlEncoderDecoder() {
         </button>
         <button
           onClick={() => setOptions(p => ({...p, beautify: !p.beautify, minify: false}))}
-          className={`p-2 rounded ${
+          className={`p-2 cursor-pointer rounded ${
             options.beautify
               ? 'bg-green-600 text-white'
               : 'bg-gray-100 hover:bg-gray-200'
@@ -168,7 +168,7 @@ export default function HtmlEncoderDecoder() {
         </button>
         <button
           onClick={resetFields}
-          className="p-2 rounded bg-red-100 hover:bg-red-200 text-red-600"
+          className="p-2 cursor-pointer rounded bg-red-100 hover:bg-red-200 text-red-600"
         >
           Reset
         </button>
@@ -177,19 +177,19 @@ export default function HtmlEncoderDecoder() {
       <div className="flex gap-4 mb-6">
         <button
           onClick={htmlEncode}
-          className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"
+          className="bg-indigo-600 text-white cursor-pointer px-4 py-2 rounded hover:bg-indigo-700"
         >
           Encode
         </button>
         <button
           onClick={htmlDecode}
-          className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700"
+          className="bg-gray-600 text-white cursor-pointer px-4 py-2 rounded hover:bg-gray-700"
         >
           Decode
         </button>
         <button
           onClick={formatHtml}
-          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+          className="bg-green-600 text-white cursor-pointer px-4 py-2 rounded hover:bg-green-700"
         >
           Format HTML
         </button>
@@ -207,7 +207,7 @@ export default function HtmlEncoderDecoder() {
             <label className="text-gray-700">Result:</label>
             <button
               onClick={copyToClipboard}
-              className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300"
+              className="bg-gray-200 px-4 py-2 cursor-pointer rounded hover:bg-gray-300"
             >
               Copy
             </button>
@@ -215,7 +215,7 @@ export default function HtmlEncoderDecoder() {
           <textarea
             value={output}
             readOnly
-            className="w-full p-3 border rounded-lg bg-gray-50 h-48 font-mono"
+            className="w-full p-3 border cursor-pointer rounded-lg bg-gray-50 h-48 font-mono"
           />
         </div>
       )}

@@ -167,7 +167,7 @@ export default function PasswordGenerator() {
       <div className="flex gap-4">
         <button
           onClick={generatePassword}
-          className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 flex items-center gap-2"
+          className="bg-indigo-600 cursor-pointer text-white px-4 py-2 rounded-lg hover:bg-indigo-700 flex items-center gap-2"
         >
           <FiRefreshCw />
           Regenerate
@@ -176,7 +176,7 @@ export default function PasswordGenerator() {
         {password && (
           <button
             onClick={copyToClipboard}
-            className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300 flex items-center gap-2"
+            className="bg-gray-200 px-4 py-2 cursor-pointer rounded hover:bg-gray-300 flex items-center gap-2"
           >
             {copied ? <FiCheckCircle className="text-green-600" /> : <FiCopy />}
             {copied ? 'Copied!' : 'Copy'}
