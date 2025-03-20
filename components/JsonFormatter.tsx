@@ -32,7 +32,7 @@ export default function JsonFormatter() {
       }
       setError('');
     } catch (e) {
-      setError(`Invalid ${viewMode.toUpperCase()}: ${e.message}`);
+      setError(`Invalid ${viewMode.toUpperCase()}: ${(e as Error).message}`);
     }
   }, [input, viewMode, autoFormat]);
 
@@ -44,7 +44,7 @@ export default function JsonFormatter() {
       setViewMode('yaml');
       setError('');
     } catch (e) {
-      setError(`Invalid JSON for YAML conversion: ${e.message}`);
+      setError(`Invalid JSON for YAML conversion: ${(e as Error).message}`);
     }
   };
 
@@ -55,7 +55,7 @@ export default function JsonFormatter() {
       setViewMode('json');
       setError('');
     } catch (e) {
-      setError(`Invalid YAML for JSON conversion: ${e.message}`);
+      setError(`Invalid YAML for JSON conversion: ${(e as Error).message}`);
     }
   };
 
@@ -69,7 +69,7 @@ export default function JsonFormatter() {
       setViewMode('csv');
       setError('');
     } catch (e) {
-      setError(`Invalid JSON for CSV conversion: ${e.message}`);
+      setError(`Invalid JSON for CSV conversion: ${(e as Error).message}`);
     }
   };
 
@@ -80,7 +80,7 @@ export default function JsonFormatter() {
       setViewMode('json');
       setError('');
     } catch (e) {
-      setError(`Invalid CSV format: ${e.message}`);
+      setError(`Invalid CSV format: ${(e as Error).message}`);
     }
   };
 

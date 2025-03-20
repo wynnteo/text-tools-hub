@@ -5,7 +5,8 @@ import dynamic from 'next/dynamic';
 import {
   FiType, FiArrowRight, FiLink, FiSearch,
   FiHash, FiLock, FiCode, FiGitMerge,
-  FiSmartphone, FiDroplet, FiKey, FiAlignLeft
+  FiSmartphone, FiDroplet, FiKey, FiAlignLeft,
+  FiShield
 } from 'react-icons/fi';
 
 // Lazy load components for better performance
@@ -24,6 +25,7 @@ const FindReplace = dynamic(() => import('@/components/FindReplace'));
 const HtmlEncoderDecoder = dynamic(() => import('@/components/HtmlEncoderDecoder'));
 const UrlEncoderDecoder = dynamic(() => import('@/components/UrlEncoderDecoder'));
 const ColorConverter = dynamic(() => import('@/components/ColorConverter'));
+const BcryptTool = dynamic(() => import('@/components/BcryptTool'));
 
 const tabs = [
   // Text Manipulation Tools
@@ -37,6 +39,7 @@ const tabs = [
   { id: 'base64', label: 'Base64', icon: <FiLock />, component: <Base64Tool /> },
   { id: 'html-encode', label: 'HTML', icon: <FiCode />, component: <HtmlEncoderDecoder /> },
   { id: 'url-encode', label: 'URL', icon: <FiLink />, component: <UrlEncoderDecoder /> },
+  { id: 'bcrypt', label: 'Bcrypt', icon: <FiShield />, component: <BcryptTool /> },
 
   // Developer Tools
   { id: 'json', label: 'JSON', icon: <FiCode />, component: <JsonFormatter /> },
@@ -57,7 +60,7 @@ const categories = [
   },
   {
     name: 'Encoding',
-    tabs: ['base64', 'html-encode', 'url-encode']
+    tabs: ['base64', 'html-encode', 'url-encode', 'bcrypt']
   },
   {
     name: 'Developer',
